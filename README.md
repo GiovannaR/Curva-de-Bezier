@@ -5,9 +5,10 @@
 Para que o algoritmo funcione no seu computador é necessário a instalação do Python3 e do Tkinter (biblioteca do Python3).
 
 Códigos para instalação em sistema Linux:
+
 <code>
   apt-get install python3
-  
+
   apt-get install python3-tk
 </code>
 
