@@ -54,8 +54,22 @@ Os <i>polinômios de Bernstein</i> possuem a seguinte fórmula:
 
 ![bernstein](https://user-images.githubusercontent.com/19623850/49145547-30821a00-f2e7-11e8-9b0c-76a89cd823f7.gif)
 
+Nessa equação, o valor de <i>t</i> deve estar entre 0 e 1 para que a curva seja positiva. No algoritmo utilizado, o <i>t</i> é equivalente a variável "u", no qual quanto mais próxima de 0, mais a curva fica contínua. No código utilizado descrito abaixo é possível perceber como essa fórmula foi utilizada:
 
+```
+  def bezier(self, points, u):
+    if (len(points) == 1):
+      self.plot_pixel(points[0][0], points[0][1])
+    else:
+      novospontos = []
+      for i in range(0, len(points)-1):
+        x = (1-u) * points[i][0] + u * points[i+1][0]
+        y = (1-u) * points[i][1] + u * points[i+1][1]
+        novospontos.append((x, y))
+      self.bezier(novospontos, u)
+ ```
 
+O "i", correspondente ao item da iteração, representa os vértices, condições de controle. Assim que se calcula para o "x" e o "y", a função é chamada recursivamente para os dois pontos. Essa parte correponte à combinação  da fórmula de <i>Bernstein</i>. A lista de tuplas "points" contém os pontos referentes às condições de controle.
 
 
 Referências: 
