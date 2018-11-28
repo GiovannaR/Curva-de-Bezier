@@ -25,7 +25,7 @@ O código no arquivo <b>beziercg.py</b> é composto de uma classe chamada <i>Cur
 
 <ul>
   <li>inicio(): assim que a aplicação se inicia essa função é chamada, ela contém apenas o <i>bind</i> para que quando qualquer parte do canvas seja clicada, a função inicializar_coordenadas(event) seja chamada </li>
-  <li>inicio2(): essa função é chamada quando o botão: "Escolher novamente os pontos" é clicado, a única diferença para a inicio() é que a variável contador é zerada, além de conter o <i>bind</i>.</li>
+  <li>inicio2(): essa função é chamada quando o botão: "Escolher novamente os pontos" é clicado, a única diferença para a função inicio() é que a variável contador é zerada, além de conter o <i>bind</i>.</li>
   <li>inicializar_coordenadas(event): o parâmetro <i>event</i> representa o evento, que no caso é o clique no canvas e as posições desse clique podem ser adquiridas por meio dos comandos: <i>event.x</i> e <i>event.y</i>. A variável contador tem um papel importante na determinação de qual condição de controle a posição do mouse será atribuída, são elas: ponto inicial, intermediário 1, intermediário 2 e ponto final. Após o contador ser maior do que 4 a função sai de sua recursividade, pois todas as condições de controle já foram adquiridas. 
   <li>imprimir_pontos(): apenas imprimi no canvas as condições de controle, monta uma lista de tuplas com todas as condições de controle e inicializa a função draw(points).</li>
 </ul>
