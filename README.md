@@ -47,7 +47,7 @@ A curva de Bezier é uma curva que segue a forma do polígono de controle estand
 
 Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula:
 
-![codecogseqn](https://user-images.githubusercontent.com/19623850/49144070-953b7580-f2e3-11e8-9068-6b606c03d107.gif)
+![codecogseqn](https://user-images.githubusercontent.com/19623850/49144070-953b7580-f2e3-11e8-9068-6b606c03d107.gif?style=centerme)
 
 
 
