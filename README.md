@@ -33,16 +33,18 @@ O código no arquivo <b>beziercg.py</b> é composto de uma classe chamada <i>Cur
 As funções responsáveis pela construção das curvas de Bezier foram adaptadas do algoritmo contido no link: https://github.com/NikolaiT/CunningCaptcha/blob/master/python_tests/casteljau.py. Essas funções são as seguintes:
 
 <ul>
-  <li>desenhar(points): inicializa o algoritmo que forma a curva de Bezier. O parâmetro u ,contido na função, é responável pela frequência em que se exibe os pixels intermediários e varia de 0 a 1 em 0,001. Quanto maior essa variação, por exemplo, em vez de 0.001 para 0.01, mais a linha da curva perde em continuidade, podendo se tornar uma linha pontilhada. Já o parâmetro recebido "points" é a lista de tupla contendo todas as condições de controle.</li>
-  <li>bezier(points, u): acrescenta novos pontos em um <i>array</i> chamado "novospontos" que são calculados de acordo com a equação de Bernstein. Essa equação leva em consideração o número de pontos de controle e o parâmetro "u". O número de pontos de controle vai diminuindo de um em um, até que se tenha apenas um, quando isso ocorre a função sai de sua recursividade e começa a preencher os pontos calculados pela equação de Bernstein por meio da função plot_pixel(x0,y0).</li>
-  <li>plot_pixel(x0,y0): como o tkinter não possibilita o preenchimento de um pixel, essa função simula esse preenchimento imprimindo no canvas uma linha de 1cm horizontal.</li>
+  <li>desenhar(points): inicializa o algoritmo que forma a curva de Bezier. O parâmetro "u" ,contido na função, é responável pela frequência em que se exibe os pixels intermediários e varia de 0 a 1 em 0,001. Quanto maior essa variação, por exemplo, em vez de 0.001 para 0.01, mais a linha da curva perde em continuidade, podendo se tornar uma linha pontilhada. Já o parâmetro recebido "points" é a lista de tuplas contendo todas as condições de controle.</li>
+  <li>bezier(points, u): acrescenta novos pontos em um <i>array</i> chamado "novospontos" que são calculados de acordo com a equação de <i>Bernstein</i>. Essa equação leva em consideração o número de pontos de controle e o parâmetro "u". O número de pontos de controle vai diminuindo de um em um, até que se tenha apenas um, quando isso ocorre a função sai de sua recursividade e começa a preencher os pontos calculados pela equação de <i>Bernstein</i> por meio da função plot_pixel(x0,y0).</li>
+  <li>plot_pixel(x0,y0): como o tkinter não possibilita o preenchimento de um pixel, essa função simula esse preenchimento imprimindo no canvas uma linha de 1cm na horizontal.</li>
 </ul>
 
 Quanto à estrutura de dados utilizada, os pontos são representados por dois inteiros, a posição x e a posição y. O método desenhar e bezier trabalham com uma lista desses pontos que são representados por tuplas com a posição x e y, ou seja, trabalham com uma lista de tuplas. O parâmetro "u" é um float, e o "contador" é um inteiro.
 
+Link para download do algoritmo que inspirou as soluções implementadas para a montagem da curva de Bezier: https://github.com/NikolaiT/CunningCaptcha/blob/master/python_tests/casteljau.py
+
 ## Funcionamento da curva de Bezier
 
-A curva de Bezier é uma curva que segue a forma do polígono de controle estando dentro do seu fecho convexo. Esse polígono é  geralmente formado por quatro condições de controle, assim como mostra o exemplo abaixo:
+A curva de Bezier é uma curva que segue a forma do polígono de controle, estando dentro do seu fecho convexo. Esse polígono é  geralmente formado por quatro condições de controle, assim como mostra o exemplo abaixo, no qual os pontos destacados são as condições de controle.
 
 
 Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula abaixo, na qual ![bkn](https://user-images.githubusercontent.com/19623850/49144564-db450900-f2e4-11e8-87f8-d1721ba75526.gif) são <i>polinômios de Bernstein</i> e os vértices ![pk](https://user-images.githubusercontent.com/19623850/49145101-26135080-f2e6-11e8-9453-5b374c8ab212.gif)
