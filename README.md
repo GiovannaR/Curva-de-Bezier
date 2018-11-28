@@ -52,7 +52,7 @@ Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva para
 
 Os <i>polinômios de Bernstein</i> possuem a seguinte fórmula:
 
-
+![bernstein](https://user-images.githubusercontent.com/19623850/49145547-30821a00-f2e7-11e8-9b0c-76a89cd823f7.gif)
 
 
 
