@@ -41,6 +41,15 @@ Quanto à estrutura de dados utilizada, os pontos são representados por dois in
 
 ## Funcionamento da curva de Bezier
 
+A curva de Bezier é uma curva que segue a forma do polígono de controle estando dentro do seu fecho convexo. Esse polígono é  geralmente formado por quatro condições de controle, assim como mostra o exemplo abaixo:
+
+
+Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula:
+
+![](/Imagens/teste.png?raw=true)
+
+
+
 Referências: 
 <ul>
   <li> http://www.mat.ufmg.br/~rodney/notas_de_aula/bezier.pdf </li>
