@@ -72,13 +72,12 @@ Nessa equação, o valor de <i>t</i> deve estar entre 0 e 1 para que a curva sej
       self.bezier(novospontos, u)
  ```
 
-O "i", correspondente ao item da iteração, representa os vértices, condições de controle. Assim que se calcula para o "x" e o "y", a função é chamada recursivamente para os dois pontos. Essa parte correponte à combinação ![nk](https://user-images.githubusercontent.com/19623850/49147817-d7b58000-f2ec-11e8-86a7-0cb80503f7f8.gif) da fórmula de <i>Bernstein</i>. A lista de tuplas "points" contém os pontos referentes às condições de controle.
+O "i", correspondente ao item da iteração, representa os vértices, condições de controle. Assim que se calcula o "x" e o "y" na iteração, a função é chamada recursivamente para os pontos. Essa parte, iteração com chamada recursiva, correponde à combinação ![nk](https://user-images.githubusercontent.com/19623850/49147817-d7b58000-f2ec-11e8-86a7-0cb80503f7f8.gif) da fórmula de <i>Bernstein</i>. A lista de tuplas "points" contém os pontos referentes às condições de controle.
 
 
 Referências: 
 <ul>
-  <li> http://www.mat.ufmg.br/~rodney/notas_de_aula/bezier.pdf </li>
-  <li> http://www.portalsaberlivre.com.br/manager/uploads/educacional/1316553740.pdf </li>
+  <li> Imagem, informações, equações e texto: http://www.mat.ufmg.br/~rodney/notas_de_aula/bezier.pdf </li>
 </ul>
 
 ## Maneira de usar
