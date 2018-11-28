@@ -19,7 +19,7 @@ Tkinter: https://tkdocs.com/tutorial/install.html
 
 Para executar o código é necessário digitar a linha de comando: <code> python3 beziercg.py </code>
 
-## Estrutura
+## Estrutura do código
 
 O código no arquivo <b>beziercg.py</b> é composto de uma classe chamada <i>CurvaBezier</i>, essa classe contém os componentes de sua respectiva tela, que são um label, dois botões e o canvas, que é a parte da tela destinada ao desenho das aplicações. Essa classe também possui funções que auxiliam no funcionamento da aplicação e funções que são responsáveis pela construção da curva de Bezier. As funções que auxiliam no funcionamento da aplicação são as seguintes:
 
