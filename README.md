@@ -45,7 +45,7 @@ Quanto à estrutura de dados utilizada, os pontos são representados por dois in
 A curva de Bezier é uma curva que segue a forma do polígono de controle estando dentro do seu fecho convexo. Esse polígono é  geralmente formado por quatro condições de controle, assim como mostra o exemplo abaixo:
 
 
-Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula:
+Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula abaixo, na qual <i>B_{k,n} são <i>polinômios de Bernstein</i> e os vértices P_k são os pesos, para que um vértice tenha mais peso, basta repetí-lo na equação e, então, a curva ficará mais proxima desse vértice
 
 ![codecogseqn](https://user-images.githubusercontent.com/19623850/49144070-953b7580-f2e3-11e8-9068-6b606c03d107.gif?style=centerme)
 
