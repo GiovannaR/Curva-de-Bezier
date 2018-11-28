@@ -13,6 +13,7 @@ Códigos para instalação em sistema Linux:
 </code>
 
 Links que auxiliam ao baixar o Python3 e o Tkinter no Windows:
+
 Python3: https://cadernoscicomp.com.br/instalar-python-3-no-windows/ 
 Tkinter: https://tkdocs.com/tutorial/install.html
 
@@ -46,7 +47,8 @@ A curva de Bezier é uma curva que segue a forma do polígono de controle estand
 
 Para um polígono de <i>n + 1</i> vértices, a curva de Bezier é uma curva paramétrica polinomial de grau <i>n</i> correspondente à fórmula:
 
-![](/Imagens/teste.png?raw=true)
+![codecogseqn](https://user-images.githubusercontent.com/19623850/49144070-953b7580-f2e3-11e8-9068-6b606c03d107.gif)
+
 
 
 
