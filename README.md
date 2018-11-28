@@ -40,7 +40,7 @@ As funções responsáveis pela construção das curvas de Bezier foram adaptada
 
 Quanto à estrutura de dados utilizada, os pontos são representados por dois inteiros, a posição x e a posição y. O método desenhar e bezier trabalham com uma lista desses pontos que são representados por tuplas com a posição x e y, ou seja, trabalham com uma lista de tuplas. O parâmetro "u" é um float, e o "contador" é um inteiro.
 
-Link para download do algoritmo que inspirou as soluções implementadas para a montagem da curva de Bezier: https://github.com/NikolaiT/CunningCaptcha/blob/master/python_tests/casteljau.py
+Link para download do algoritmo que inspirou as soluções implementadas para a montagem da curva de Bezier: https://github.com/NikolaiT/CunningCaptcha.
 
 ## Funcionamento da curva de Bezier
 
