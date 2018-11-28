@@ -21,7 +21,7 @@ Para executar o código é necessário digitar a linha de comando: <code> python
 
 ## Estrutura
 
-O código no arquivo <b>beziercg.py</b> é composto de uma classe chamada <i>CurvaBezier</i>, essa classe contém os componentes de sua respectiva tela, que são um label, dois botões e o canvas, que é a parte da tela destinada ao desenho das aplicações. Essa classe também possui funções que auxiliam no funcionamento da aplicações e funções que são responsáveis pela construção da curva de Bezier. As funções que auxiliam no funcionamento da aplicação são as seguintes:
+O código no arquivo <b>beziercg.py</b> é composto de uma classe chamada <i>CurvaBezier</i>, essa classe contém os componentes de sua respectiva tela, que são um label, dois botões e o canvas, que é a parte da tela destinada ao desenho das aplicações. Essa classe também possui funções que auxiliam no funcionamento da aplicação e funções que são responsáveis pela construção da curva de Bezier. As funções que auxiliam no funcionamento da aplicação são as seguintes:
 
 <ul>
   <li>inicio(): assim que a aplicação se inicia essa função é chamada, ela contém apenas o <i>bind</i> para que quando qualquer parte do canvas seja clicada, a função inicializar_coordenadas(event) seja chamada </li>
